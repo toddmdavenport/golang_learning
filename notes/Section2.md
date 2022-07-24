@@ -14,7 +14,7 @@ idomatic
 Start with a package declaration `package main` and a function declaration.
 Each file must end with `.go` and the first line must be a package declaration.
 
-[section2 main.go file](../exercises/section2/functions_and_variables.go) shows some basic use of
+[section2 main.go file](../exercises/section2/8functionsAndVariables.go) shows some basic use of
 the language including printing, variable declaration, combimed declaration and
 assignment with the `:=` operator, and function declaration and calling a
 function.
@@ -34,5 +34,19 @@ what is stored in that location.
 
 A pointer is declared using a `*` and and reference is declared using an `&`.
 
-You can use a pointer to set overwrite a variable in memeory as shown in the
+You can use a pointer to change a variable in memeory as shown in the
 [exercise](../exercises/section2/9pointers.go) for this seciton.
+
+You can see in the example that the memory address of `myString` is loggeed when
+the function is called.
+
+## 10. Types and Structs
+
+Some more info on Variable Declaration
+
+you can declare a variable and set it at the same time like `var s = "seven"`
+Local variables can override global variables in the scope of a functions.
+The compiler will allow re-use of the same names at different scopes so it is
+important to avoid name collision.
+
+[exercise](../exercises/section2/10typesAndStructs.go)
