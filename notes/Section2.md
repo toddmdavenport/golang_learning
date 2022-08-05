@@ -122,3 +122,24 @@ func (m *myStruct) printFirstName() string {
 
 This allows you to perform business logic in the function. It's very useful and
 will be used throughout the course.
+
+### Other Data Structures: Maps and Slices
+
+Starts with a recap on vars and variable assignment.
+
+A map is created using the `make` keyword:
+
+```go
+myMap := make(map[string]string)
+```
+
+The first `string` is the index and the 2nd is the value.
+
+```go
+myMap["dog"] = "Samson"
+myMap["other-dog"] = "Cassie"
+```
+
+maps are very fast. They are also immutable, so you do not have to worry about passing pointers to maps when using them in another package. They are also unsorted so you must look items by key. Do not depend no the order.
+
+You can make a struct the value of a map.
