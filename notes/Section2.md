@@ -101,3 +101,24 @@ oriented. Go uses naming conventions to make thing private or public. If a
 function starts with a capital letter, it is available outside the package. If
 it starts with a lowercase letter its only accessible inside the package. Same
 goes for variables and structs.
+
+### Structs and functions
+
+You can easily assign a function to a struct.
+
+```go
+package main
+
+type myStruct struct {
+    FirstName string
+}
+
+//pointer to the struct
+// called a 'receiver`
+func (m *myStruct) printFirstName() string {
+    return m.FirstName
+}
+```
+
+This allows you to perform business logic in the function. It's very useful and
+will be used throughout the course.
